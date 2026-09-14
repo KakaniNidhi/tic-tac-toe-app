@@ -33,7 +33,7 @@ Full-stack, browser-based Tic Tac Toe solution built with a **React.JS + TypeScr
 ```bash
 cd backend/TicTacToe.Api
 dotnet run
-
+```
 ---
 
 ## Design Decisions

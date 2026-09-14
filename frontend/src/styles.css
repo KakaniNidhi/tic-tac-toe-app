@@ -1,0 +1,112 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mode-selection {
+  margin: 15px 0;
+  font-size: 1rem;
+}
+
+.mode-selection select {
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 8px;
+}
+
+.Board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  border: 3px solid #333;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  user-select: none;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.cell:hover:not(.winning) {
+  background-color: #e0e0e0;
+}
+
+.cell.winning {
+  background-color: yellow;
+  color: #000;
+  border-color: #d4af37;
+}
+
+.button-group {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-group button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #efefef;
+  transition: background 0.2s ease;
+}
+
+.button-group button:hover:not(:disabled) {
+  background-color: #ddd;
+}
+
+.button-group button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.history-table {
+  margin: 15px auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 400px;
+  font-size: 0.9rem;
+}
+
+.history-table th, 
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.history-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.error-banner {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ef9a9a;
+}

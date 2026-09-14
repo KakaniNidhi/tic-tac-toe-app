@@ -1,0 +1,19 @@
+# Dependencies & Build
+node_modules/
+dist/
+build/
+.vite/
+
+# .NET Build artifacts
+bin/
+obj/
+.vs/
+
+# Logs & Environment
+*.log
+.env
+.env.local
+
+# OS junk
+.DS_Store
+Thumbs.db

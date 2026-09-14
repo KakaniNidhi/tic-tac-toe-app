@@ -34,6 +34,15 @@ Full-stack, browser-based Tic Tac Toe solution built with a **React.JS + TypeScr
 cd backend/TicTacToe.Api
 dotnet run
 ```
+
+### 2. Launch Frontend Application
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
 ---
 
 ## Design Decisions
